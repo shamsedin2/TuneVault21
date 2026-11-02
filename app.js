@@ -92,7 +92,7 @@ function createAlbumCard(album) {
 }
 
 // Search functionality
-function searchAlbums() {
+function searchAlbumsBroken() {
     const searchTerm = searchInput.value.toLowerCase().trim();
     const selectedGenre = genreFilter.value;
 
@@ -135,7 +135,7 @@ function attachEventListeners() {
     searchBtn.addEventListener('click', searchAlbums);
     searchInput.addEventListener('keyup', (e) => {
         if (e.key === 'Enter') {
-            searchAlbums();
+            searchAlbumsBroken();
         }
     });
     genreFilter.addEventListener('change', searchAlbums);
